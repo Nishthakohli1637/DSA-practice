@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int digit;
+    cin>>digit;
+    int count=0;
+    while(digit!=0){
+        int ld=digit%10;
+        cout<<ld<<endl;
+        digit=digit/10;
+    }
+    
+}
