@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int num;
+    cin>>num;
+    int count=1, sum=0;
+    while(num!=0){
+        int ld=num%10;
+        int pos=count*pow(10, ld-1);
+        sum+=pos;
+        count++;
+        num=num/10;
+    }
+    cout<<sum;
+}
