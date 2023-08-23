@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int num;
+    cin>>num;
+    int rot;
+    cin>>rot;
+    int n=num;
+    int divi=1;
+    while(n>=10){
+        n=n/10;
+        divi=divi*10;
+    }
+    int sum=0;
+    while(rot>0){
+        int ld=num%10;
+        int val=ld*divi;
+        num=num/10;
+        sum=val+num;
+        num=sum;
+        rot--;
+    }
+    cout<<num;
+}
